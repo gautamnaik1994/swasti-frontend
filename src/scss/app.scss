@@ -1,11 +1,13 @@
-$primary:#8f1941;
+$primary: #8f1941;
+$desktop-width: 992px;
 
-@import 'bootstrap/scss/bootstrap.scss';
-@import './components/homepage';
-@import './components/navbar';
+@import "./mixins";
+@import "./helpers";
 
+@import "bootstrap/scss/bootstrap.scss";
+@import "./components/homepage";
+@import "./components/navbar";
+@import "./components/profile";
 
-body{
-   
+body {
 }
-
