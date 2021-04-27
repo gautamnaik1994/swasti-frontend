@@ -8,6 +8,36 @@ $desktop-width: 992px;
 @import "./components/homepage";
 @import "./components/navbar";
 @import "./components/profile";
+@import "./components/testemonials";
+@import "./components/footer";
 
 body {
+}
+
+.main-message {
+  margin: 2rem 0;
+  padding: 0 15px;
+  &:after {
+    content: "";
+    width: 200px;
+    height: 2px;
+    background: $primary;
+    display: block;
+    margin: 3rem auto;
+  }
+  .hindi-text {
+    line-height: 1.8;
+  }
+  .t-translation {
+    line-height: 1.8;
+    margin: 0.5rem 0 2rem 0;
+  }
+  @include desktop {
+    margin: 4rem 0;
+  }
+}
+.facilities {
+  background: lighten($primary, 60%);
+  overflow: hidden;
+  padding-bottom: 4rem;
 }
