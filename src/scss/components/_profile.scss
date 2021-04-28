@@ -1,5 +1,4 @@
 .profile {
-  margin: 0 -15px;
   padding: 2rem 0;
   img {
     width: 80%;
@@ -72,6 +71,9 @@
   }
   &.dr-sweta {
     @include desktop {
+      .big-text {
+        margin-right: -22px;
+      }
       .name {
         &:after {
           margin-right: 0;

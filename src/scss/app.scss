@@ -11,6 +11,9 @@ $desktop-width: 992px;
 @import "./components/testemonials";
 @import "./components/footer";
 
+html {
+  font-size: 14px;
+}
 body {
 }
 
