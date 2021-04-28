@@ -17,6 +17,7 @@ var src = {
     html: 'src/html/**/*.html',
     img: 'src/img/**/*.*',
     js: 'src/js/**/*.*',
+    fonts: 'src/fonts/**/*.*',
 };
 
 
@@ -26,6 +27,11 @@ gulp.task('copyAssets', function (done) {
     done();
 });
 
+gulp.task('copyFonts', function (done) {
+    gulp.src(['./src/fonts/**/*.*'])
+        .pipe(gulp.dest('./build/fonts'));
+    done();
+});
 gulp.task('copyJS', function (done) {
     gulp.src(['./src/js/**/*.*'])
         .pipe(gulp.dest('./build/js'));
@@ -75,7 +81,7 @@ gulp.task('sass', function (done) {
         }));
 });
 
-gulp.task('serve', gulp.series('sass', 'flathtml', 'copyAssets', 'copyJS', function (done) {
+gulp.task('serve', gulp.series('sass', 'flathtml', 'copyAssets', 'copyJS', 'copyFonts', function (done) {
     browserSync.init({
         server: "./build",
         port: 8080,
@@ -90,12 +96,14 @@ gulp.task('serve', gulp.series('sass', 'flathtml', 'copyAssets', 'copyJS', funct
     gulp.watch(src.img, gulp.series('copyAssets', function (done) {
         reload();
         done()
-    })); gulp.watch(src.js, gulp.series('copyJS', function (done) {
+		}));
+		gulp.watch(src.fonts, gulp.series('copyFonts', function (done) {
         reload();
         done()
     }));
-    // gulp.watch('./src/{layouts,partials,helpers,data}/**/*', );
-    // gulp.watch(['./src/{layouts,partials,helpers,data}/**/*'], [panini.refresh]);
-    // gulp.watch(src.html).on('change', reload);
+		gulp.watch(src.js, gulp.series('copyJS', function (done) {
+        reload();
+        done()
+    }));
     done()
 }));

@@ -1,0 +1,28 @@
+.spine-mind-banner {
+  .big-text {
+    font-size: 80px;
+    opacity: 0.3;
+  }
+  p {
+    margin-top: 2rem;
+    line-height: 2;
+    font-size: 16px;
+    @include desktop {
+      padding-bottom: 120px;
+    }
+  }
+  img {
+    width: 100%;
+    @include desktop {
+      width: 610px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+  &.spine-banner {
+    * {
+      color: white;
+    }
+  }
+}

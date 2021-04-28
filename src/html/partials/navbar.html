@@ -1,15 +1,8 @@
 <nav class="navbar fixed-top justify-content-center">
-
-    <a class="nav-link active" aria-current="page" href="#">Home</a>
-
-    <a class="nav-link" href="#">About Us</a>
-
-    <a class="nav-link" href="#">Careers</a>
-
-    <a class="nav-link " href="#">Spine </a>
-
-    <a class="nav-link" href="#">Mind</a>
-
-    <a class="nav-link " href="#">Contact Us</a>
-
+		<a class="nav-link {{#ifpage 'index'}} active{{/ifpage}} " href="/">Home</a>
+    <a class="nav-link {{#ifpage 'about'}} active{{/ifpage}} "href="#">About Us</a>
+		<a class="nav-link {{#ifpage 'careers'}} active{{/ifpage}} "href="{{root}}careers.html">Careers</a>
+		<a class="nav-link {{#ifpage 'spine'}} active{{/ifpage}} "href="{{root}}spine.html">Spine </a>
+    <a class="nav-link {{#ifpage 'mind'}} active{{/ifpage}} "href="#">Mind</a>
+    <a class="nav-link {{#ifpage 'contact'}} active{{/ifpage}} "href="#">Contact Us</a>
 </nav>

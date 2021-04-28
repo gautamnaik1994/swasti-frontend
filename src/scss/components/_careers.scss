@@ -1,0 +1,14 @@
+.careers {
+  padding-top: 120px;
+  img {
+    width: 100%;
+    display: block;
+    margin-top: 4rem;
+    @include desktop {
+      position: absolute;
+      bottom: 4.3rem;
+      width: 700px;
+      right: 0;
+    }
+  }
+}

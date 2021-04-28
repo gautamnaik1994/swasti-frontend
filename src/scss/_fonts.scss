@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: local("Century Gothic"), local("Century Gothic"),
+    url(../fonts/GOTHIC.TTF);
+}
+@font-face {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url(../fonts/GOTHICB.TTF);
+}
+
+@font-face {
+  font-family: "Devanagri";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url(../fonts/AdobeDevanagari-Bold.otf);
+}

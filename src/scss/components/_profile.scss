@@ -7,15 +7,7 @@
   }
   .big-text {
     font-size: 80px;
-    /* position: absolute; */
     top: 0;
-    /* z-index: -1; */
-    /* left: 50%; */
-    /* transform: translateX(-50%); */
-    font-weight: bold;
-    letter-spacing: 15px;
-    opacity: 0.3;
-    line-height: 1;
   }
   .position {
     text-transform: uppercase;
@@ -50,7 +42,6 @@
     }
     .big-text {
       font-size: 160px;
-      letter-spacing: 22px;
     }
     .position {
       margin-bottom: 7rem;

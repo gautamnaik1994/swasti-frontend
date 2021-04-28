@@ -1,10 +1,14 @@
-.navbar{
-    a{
-        text-transform:uppercase;
-    }
+.navbar {
+  a {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  a.active {
+    font-weight: bold;
+  }
 }
-.home{
-    .navbar a{
-        color:white;
-    }
+.home {
+  .navbar a {
+    color: white;
+  }
 }

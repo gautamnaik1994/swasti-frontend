@@ -15,7 +15,6 @@
 }
 .brand-color {
   color: $primary;
-  color: var(--primary);
 }
 .green-color {
   color: #00aa69;
@@ -35,7 +34,7 @@
   color: #797979 !important;
 }
 .bold {
-  font-weight: 800;
+  font-weight: bold;
   //font-family: "GothamPro-Black", sans-serif;
 }
 .semibold,
@@ -219,7 +218,6 @@
 
 .brand-bg {
   background: $primary;
-  background: var(--primary);
 }
 
 .br-0 {

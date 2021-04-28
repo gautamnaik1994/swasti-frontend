@@ -1,6 +1,10 @@
 $primary: #8f1941;
 $desktop-width: 992px;
+$font-family-sans-serif: "Century Gothic", -apple-system, BlinkMacSystemFont,
+  "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol";
 
+@import "./fonts";
 @import "./mixins";
 @import "./helpers";
 
@@ -10,6 +14,9 @@ $desktop-width: 992px;
 @import "./components/profile";
 @import "./components/testemonials";
 @import "./components/footer";
+@import "./components/spine";
+@import "./components/spineMindBanner";
+@import "./components/careers";
 
 html {
   font-size: 14px;
@@ -17,6 +24,9 @@ html {
 body {
 }
 
+.banner {
+  padding-top: 120px;
+}
 .main-message {
   margin: 2rem 0;
   padding: 0 15px;
@@ -29,7 +39,9 @@ body {
     margin: 3rem auto;
   }
   .hindi-text {
-    line-height: 1.8;
+    //line-height: 1.8;
+    font-size: 28px;
+    font-family: "Devanagri";
   }
   .t-translation {
     line-height: 1.8;
@@ -37,10 +49,56 @@ body {
   }
   @include desktop {
     margin: 4rem 0;
+    .hindi-text {
+      font-size: 40px;
+    }
   }
 }
 .facilities {
   background: lighten($primary, 60%);
   overflow: hidden;
   padding-bottom: 4rem;
+}
+
+.big-text {
+  letter-spacing: 15px;
+  opacity: 0.3;
+  font-weight: bold;
+  line-height: 1;
+  @include desktop {
+    letter-spacing: 22px;
+  }
+}
+
+.custom-file-input {
+  display: flex;
+  width: 100%;
+  padding: 0.675rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  input {
+    display: none;
+  }
+  label {
+    cursor: pointer;
+    margin: 0;
+    background: $primary;
+    padding: 4px 28px;
+    color: white;
+  }
+}
+
+.btn {
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
