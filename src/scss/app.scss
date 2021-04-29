@@ -105,3 +105,16 @@ body {
   padding-right: 2rem;
   padding-left: 2rem;
 }
+
+.icon-before {
+  position: relative;
+  padding-left: 25px;
+  i {
+    position: absolute;
+    left: 0;
+    top: 5px;
+  }
+  .fa-map-marker {
+    font-size: 1.3rem;
+  }
+}
