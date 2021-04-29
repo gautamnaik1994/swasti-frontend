@@ -1,0 +1,63 @@
+.about {
+  padding-top: 0px;
+  .container {
+    padding-top: 120px;
+  }
+  .name {
+    font-weight: bold;
+    &:after {
+      content: "";
+      width: 50px;
+      height: 4px;
+      border-radius: 30px;
+      background-color: currentColor;
+      margin: 1rem auto;
+      display: block;
+      margin-left: 0px;
+    }
+  }
+  .name-shweta {
+    &:after {
+      margin-right: 0px;
+      margin-left: auto;
+    }
+  }
+  .big-text{
+    font-size: 72px;
+    opacity: 1;
+  }
+  .big-text-banner{
+    position: relative;
+    height: 30px;
+    width: 100%;
+    font-size: 142px;
+    letter-spacing: 30px;
+    font-weight: 700;
+    opacity: 0.3;
+  }
+  .banner {
+    padding-top: 0;
+    background: $primary;
+    img {
+      width: 100%;
+    }
+  }
+  .banner-left {
+    padding: 130px 0 130px 80px;
+  }
+  .logo-floating {
+    width: 100%;
+    @include desktop {
+      width: 20%;
+      position: absolute;
+      top: 180px;
+      right: 15%;
+    }
+  }
+  .inner {
+    padding: 40px;
+  }
+  .big-text-right {
+    margin-right: -22px;
+  }
+}

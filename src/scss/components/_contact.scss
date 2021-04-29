@@ -1,6 +1,12 @@
-.careers {
+.contact {
+  .form-control {
+    border-color: $primary;
+  }
+  label {
+    color: $primary;
+  }
   padding-top: 120px;
-  img {
+  .top-image {
     width: 100%;
     display: block;
     margin-top: 4rem;
@@ -10,11 +16,5 @@
       width: 700px;
       right: 0;
     }
-  }
-  .form-control {
-    border-color: $primary;
-  }
-  label {
-    color: $primary;
   }
 }
