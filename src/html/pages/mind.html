@@ -6,47 +6,131 @@ description: Swasti Mind and Spine
 	{{> navbar }}
 	{{> mindBanner}}
 	{{> drsweta}}
-
-	<div class="container ">
-		<div class="row">
-			<div class="col-12 col-lg-6 banner-left">
-				<h2 class="text-primary four-rem-mt four-rem-mb bold">Facts<br />and Myths</h2>
+	<div class="container ailments bg-white">
+		<ul class="nav nav-pills mb-3 flex-column flex-sm-row tabs-row" id="pills-tab" role="tablist">
+			<li class="nav-item" role="presentation">
+				<button class="nav-link-tabs nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+					type="button" role="tab" aria-controls="pills-home" aria-selected="true">Common Ailments</button>
+			</li>
+			<li class="nav-item" role="presentation">
+				<button class="nav-link-tabs nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+					type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Treatment
+					Options</button>
+			</li>
+		</ul>
+	</div>
+	<div class="profile text-white bg-primary">
+		<div class="container ailments">
+			<div class="tab-content " id="pills-tabContent">
+				<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+					<div class="d-flex align-items-start">
+						<div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+							aria-orientation="vertical">
+							<button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+								data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+								aria-selected="true">Major Depressive Disorder (Mdd)</button>
+							<button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+								data-bs-target="#v-pills-profile" type="button" role="tab"
+								aria-controls="v-pills-profile" aria-selected="false">Bipolar Mood Disorder</button>
+							<button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+								data-bs-target="#v-pills-messages" type="button" role="tab"
+								aria-controls="v-pills-messages" aria-selected="false">Anxiety Disorders</button>
+							<button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+								data-bs-target="#v-pills-settings" type="button" role="tab"
+								aria-controls="v-pills-settings" aria-selected="false">OCD</button>
+						</div>
+						<div class="tab-content" id="v-pills-tabContent">
+							<div class="tab-pane fade show active bg-primary text-white" id="v-pills-home"
+								role="tabpanel" aria-labelledby="v-pills-home-tab">
+								<ul>
+									<li>Excessive anxiety/ restlessness/ unexplainable fear over prolonged periods</li>
+									<li>Palpitations, racing negative thoughts, butterflies in abdomen, nausea,
+										increased sweating, difficulty in breathing, choking sensations, increased
+										urination/ stool frequency.</li>
+									<li>Fear that one might go mad/ fear that something bad is going to happen
+									<li>Unexplained bodily pains</li>
+									<li>Anxiety in specific situations: social anxiety/ performance anxiety</li>
+									<li>Seizure like symptoms, stress induced: hysteria</li>
+									<li>Fear of having some major illness</li>
+									<li>Anxiety related to the perceived idea of some body part/ appearance
+										being inappropriate/ disfigured</li>
+								</ul>
+							</div>
+							<div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+								aria-labelledby="v-pills-profile-tab">...</div>
+							<div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+								aria-labelledby="v-pills-messages-tab">...</div>
+							<div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+								aria-labelledby="v-pills-settings-tab">...</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...
+				</div>
 			</div>
-			<div class="col-12 col-lg-6 ">
-				<button class="accordion bg-white">Section 1</button>
-				<div class="panel bg-primary">
-					<p class="text-white padding-10-vertical padding-15-side">Lorem ipsum dolor sit amet, consectetur
-						adipisicing elit, sed do eiusmod tempor incididunt ut
-						labore
-						<br /><br /><b>et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-							ullamco laboris nisi
-							ut
-							aliquip ex ea commodo consequat.</b>
-					</p>
-				</div>
+		</div>
+	</div>
 
-				<button class="accordion">Section 2</button>
-				<div class="panel bg-primary">
-					<p class="text-white padding-10-vertical padding-15-side">Lorem ipsum dolor sit amet, consectetur
-						adipisicing elit, sed do eiusmod tempor incididunt ut
-						labore
-						<br /><br /><b>et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-							ullamco laboris nisi
-							ut
-							aliquip ex ea commodo consequat.</b>
-					</p>
-				</div>
 
-				<button class="accordion">Section 3</button>
-				<div class="panel bg-primary ">
-					<p class="text-white padding-10-vertical padding-15-side">Lorem ipsum dolor sit amet, consectetur
-						adipisicing elit, sed do eiusmod tempor incididunt ut
-						labore
-						<br /><br /><b>et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-							ullamco laboris nisi
-							ut
-							aliquip ex ea commodo consequat.</b>
-					</p>
+	<div class="profile text-primary bg-white">
+		<div class="container ailments">
+			<div class="row">
+				<div class="col-12 col-lg-6 banner-left">
+					<h2 class="text-primary four-rem-mb bold">Facts<br />and Myths</h2>
+				</div>
+				<div class="col-12 col-lg-6 ">
+					<div class="accordion accordion-flush" id="accordionFlushExample">
+						<div class="accordion-item ">
+							<h2 class="accordion-header" id="flush-headingOne">
+								<button class="accordion-button collapsed accordion-border" type="button"
+									data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true"
+									aria-controls="flush-collapseOne">
+									Psychiatric illness is a chronic illness requiring lifelong treatment.
+								</button>
+							</h2>
+							<div id="flush-collapseOne" class="accordion-collapse collapse"
+								aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+								<div class="accordion-body">Placeholder content for this accordion, which is intended to
+									demonstrate the class. This is the first item's accordion
+									body.</div>
+							</div>
+						</div>
+						<div class="accordion-item ">
+							<h2 class="accordion-header" id="flush-headingTwo">
+								<button class="accordion-button collapsed accordion-border" type="button"
+									data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+									aria-controls="flush-collapseTwo">
+									Medicines for psychiatric illnesses are addictive
+									and habit forming and difficult to withdraw/ quit
+								</button>
+							</h2>
+							<div id="flush-collapseTwo" class="accordion-collapse collapse"
+								aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+								<div class="accordion-body">Placeholder content for this accordion, which is intended to
+									demonstrate the class. This is the first item's accordion
+									body.</div>
+							</div>
+						</div>
+						<div class="accordion-item ">
+							<h2 class="accordion-header" id="flush-headingOne">
+								<button class="accordion-button collapsed accordion-border" type="button"
+									data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+									aria-expanded="false" aria-controls="flush-collapseThree">
+									Psychiatric illness is a chronic illness requiring lifelong treatment.
+								</button>
+							</h2>
+							<div id="flush-collapseThree" class="accordion-collapse collapse"
+								aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+								<div class="accordion-body">Placeholder content for this accordion, which is intended to
+									demonstrate the class. This is the first item's accordion
+									body.<br /><br /><b>et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+										exercitation
+										ullamco laboris nisi
+										ut
+										aliquip ex ea commodo consequat.</b></div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

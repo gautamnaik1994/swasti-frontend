@@ -4,4 +4,135 @@
   }
   .banner {
   }
+
+  .ailments {
+    padding: 60px 80px;
+  }
+  .profile {
+    border-bottom: 1px solid $primary;
+  }
+
+  .ailments .nav-pills {
+    background-color: #fff;
+  }
+
+  .accordion-item {
+    border-bottom: 1px solid $white;
+  }
+
+  .accordion-body {
+    color: $primary;
+    background-color: white;
+  }
+
+  .accordion-button {
+    color: white;
+    background-color:$primary;
+    border-bottom: 1px solid $white;
+    padding-right: 20px;
+  }
+
+  .accordion-button::after {
+    content: '\25BA';
+    background-image: unset;
+    color: white;
+  }
+
+  .banner-left h2 {
+    font-size: 2.8rem !important;
+  }
+
+  .nav-link.active {
+    border-radius: 0;
+  }
+
+  .nav-link-tabs {
+    border: 1px solid $primary;
+    background-color: #fff;
+    color: $primary;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 0;
+    font-size: 22px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .nav-link-v-tabs {
+    border: 1px solid $primary;
+    background-color: #fff;
+    width: 40%;
+  }
+
+  .tabs-row {
+    justify-content: space-around;
+  }
+
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  #v-pills-tabContent {
+    max-width: 600px;
+  }
+
+  #v-pills-tab .nav-link {
+    padding: 2rem;
+    border-bottom: 1px solid white;
+    background-color: $primary;
+    color: white;
+    border-radius: 0;
+  }
+
+  .nav-v-tab.active {
+    background-color: white !important;
+    color: $primary !important;
+  }
+
+  #v-pills-2-tabContent {
+    max-width: 600px;
+  }
+
+  #v-pills-2-tab .nav-link {
+    padding: 2rem;
+    border-bottom: 1px solid $primary;
+    background-color: white;
+    color: $primary;
+    border-radius: 0;
+  }
+
+  .nav-v-2-tab.active {
+    background-color: $primary !important;
+    color: white !important;
+  }
+
+  .nav-pills-mx-dk {
+    @include desktop {
+      min-width: 400px;
+    }
+  }
+
+  #v-pills-3-tabContent {
+    max-width: 600px;
+  }
+
+  #v-pills-3-tab .nav-link {
+    padding: 2rem;
+    border-bottom: 1px solid white;
+    background-color: $primary;
+    color: white;
+    border-radius: 0;
+  }
+
+  .nav-v-3-tab.active {
+    background-color: white !important;
+    color: $primary !important;
+  }
+  .container.ailments.bg-white {
+    padding-bottom: 0px;
+  }
 }
