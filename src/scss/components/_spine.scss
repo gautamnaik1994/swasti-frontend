@@ -3,6 +3,9 @@
     color: white;
   }
   .banner {
+    * {
+      color: white;
+    }
   }
 
   .ailments {
@@ -27,13 +30,13 @@
 
   .accordion-button {
     color: white;
-    background-color:$primary;
+    background-color: $primary;
     border-bottom: 1px solid $white;
     padding-right: 20px;
   }
 
   .accordion-button::after {
-    content: '\25BA';
+    content: "\25BA";
     background-image: unset;
     color: white;
   }

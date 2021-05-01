@@ -22,11 +22,11 @@
       margin-left: auto;
     }
   }
-  .big-text{
+  .big-text {
     font-size: 72px;
     opacity: 1;
   }
-  .big-text-banner{
+  .big-text-banner {
     position: relative;
     height: 30px;
     width: 100%;
@@ -44,14 +44,18 @@
   }
   .banner-left {
     padding: 130px 0 130px 80px;
+    p {
+      font-size: 16px;
+      line-height: 2;
+    }
   }
   .logo-floating {
     width: 100%;
     @include desktop {
-      width: 20%;
+      width: 28%;
       position: absolute;
-      top: 180px;
-      right: 15%;
+      top: 192px;
+      right: 10%;
     }
   }
   .inner {
