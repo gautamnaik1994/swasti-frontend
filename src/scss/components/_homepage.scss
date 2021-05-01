@@ -5,5 +5,19 @@
       width: 100%;
     }
   }
+  .btn-hidden {
+    position: absolute;
+    height: 100px;
+    width: 30%;
+    top: 0;
+    cursor: pointer;
+    opacity: 0;
+  }
+  .btn-hd-lt {
+    left: 0;
+  }
+  .btn-hd-rt {
+    right: 0;
+  }
 }
 
