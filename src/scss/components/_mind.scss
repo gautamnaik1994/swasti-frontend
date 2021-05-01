@@ -11,13 +11,16 @@
   }
 
   .banner {
+    p {
+      margin-bottom: 0;
+    }
   }
   .accordion-item {
     border-bottom: 1px solid $primary;
   }
 
   .accordion-button::after {
-    content: '\25BA';
+    content: "\25BA";
     background-image: unset;
     color: $primary;
   }

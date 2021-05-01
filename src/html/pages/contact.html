@@ -45,7 +45,7 @@ description: Swasti Mind and Spine
 	<div class="container relative">
 		<div class=" row">
 			<div class="col-12 col-lg-8 text-center">
-			<img src="./img/facilities.png">
+				<div id="map"></div>
 		</div>
 		<div class="col-12 col-lg-4">
 			<div class="grid-item">
@@ -70,7 +70,16 @@ description: Swasti Mind and Spine
 	</div>
 </div>
 </div>
- <script>
-
-
- </script>
+<script>
+      function initMap() {
+        const swasti = { lat: 23.0188926, lng: 72.5298122 };
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 19,
+          center: swasti,
+        });
+        const marker = new google.maps.Marker({
+          position: swasti,
+          map: map,
+        });
+      }
+    </script>
