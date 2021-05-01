@@ -7,12 +7,16 @@
       color: white;
     }
   }
+  
 
   .ailments {
     padding: 60px 80px;
   }
   .profile {
     border-bottom: 1px solid $primary;
+  }
+  .dr-nisrag {
+    border-bottom: unset;
   }
 
   .ailments .nav-pills {

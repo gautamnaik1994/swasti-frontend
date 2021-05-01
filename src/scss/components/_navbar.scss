@@ -6,8 +6,17 @@
   a.active {
     font-weight: bold;
   }
+  background-color: white;
 }
-.home, .about {
+.home,
+.about,
+.spine {
+  .navbar {
+    background-color: $primary;
+  }
+}
+.home,
+.about {
   .navbar a {
     color: white;
   }

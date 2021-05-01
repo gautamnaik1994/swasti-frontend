@@ -14,9 +14,11 @@ footer {
   }
   .bottom-section {
     padding: 15px 0;
-    background: lighten($primary, 20%);
+    background: #9a3053;
     * {
-      font-size: 12px;
+      font-size: 11px;
+      font-weight: 500;
+      color: #e2d2d7;
     }
   }
 
