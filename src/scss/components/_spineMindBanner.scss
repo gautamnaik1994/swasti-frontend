@@ -1,12 +1,18 @@
 .spine-mind-banner {
+  .container {
+    padding-top: 4rem;
+  }
+  .inner {
+    padding-left: 4rem;
+  }
   .big-text {
-    font-size: 80px;
+    font-size: 130px;
     opacity: 0.3;
   }
   p {
     margin-top: 2rem;
     line-height: 2;
-    font-size: 16px;
+    font-size: 18px;
     @include desktop {
       padding-bottom: 120px;
     }
@@ -14,7 +20,7 @@
   img {
     width: 100%;
     @include desktop {
-      width: 610px;
+      width: 710px;
       position: absolute;
       bottom: 0;
       right: 0;

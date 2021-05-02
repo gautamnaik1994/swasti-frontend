@@ -72,6 +72,10 @@ body {
   background: lighten($primary, 60%);
   overflow: hidden;
   padding-bottom: 4rem;
+
+  .text-primary{
+    font-size: 40px;
+  }
 }
 
 .big-text {
