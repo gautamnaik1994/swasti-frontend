@@ -14,7 +14,14 @@
   .form-control {
     border-color: $primary;
   }
-  label {
+  label, span {
     color: $primary;
+    opacity: 0.4;
+    font-size: 18px;
+    line-height: 16px;
+  }
+  .browse{
+    opacity: 1 !important;
+    line-height: 26px;
   }
 }

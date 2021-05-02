@@ -5,9 +5,9 @@ description: Swasti Mind and Spine
 <div class="contact">
 	{{> navbar }}
 	<div class="container relative">
-		<h2 class="text-primary mb-5">Book an appointment, <br class="d-none d-lg-block"/>
+		<h2 class="text-primary mb-5 bold head">Book an appointment, <br class="d-none d-lg-block" />
 			Meet our specialists!
-			</h2>
+		</h2>
 		<div class="col-12 col-lg-4">
 			<form class="four-rem-mb">
 				<div class="form-floating mb-3">
@@ -23,7 +23,8 @@ description: Swasti Mind and Spine
 					<label for="floatingTel">Phone No. </label>
 				</div>
 				<div class="form-floating mb-3">
-					<textarea class="form-control" placeholder="Address" id="floatingTextarea2" style="height: 100px"></textarea>
+					<textarea class="form-control" placeholder="Address" id="floatingTextarea2"
+						style="height: 100px"></textarea>
 					<label for="floatingTextarea2">Address</label>
 				</div>
 				<div class="form-floating mb-3">
@@ -31,7 +32,8 @@ description: Swasti Mind and Spine
 					<label for="floatingSubject">Subject</label>
 				</div>
 				<div class="form-floating mb-3">
-					<textarea class="form-control" placeholder="Message" id="floatingTextarea2" style="height: 100px"></textarea>
+					<textarea class="form-control" placeholder="Message" id="floatingTextarea2"
+						style="height: 100px"></textarea>
 					<label for="floatingTextarea2">Message</label>
 				</div>
 				<div class="text-end">
@@ -42,42 +44,47 @@ description: Swasti Mind and Spine
 		</div>
 		<img class="top-image" src="img/doc_cartoon.png">
 	</div>
+	<div class="container relative four-rem-pb">
+		<div class="border-bottom-contact four-rem-pb">
+
+		</div>
+	</div>
 	<div class="container relative two-rem-mt four-rem-mb">
 		<div class=" row">
-			<div class="col-12 col-lg-7 text-center">
+			<div class="col-12 col-lg-7 text-center padding-side">
 				<div id="map"></div>
+			</div>
+			<div class="col-12 col-lg-5 address-section">
+				<h2 class="f-title bold text-primary two-rem-mb one-rem-mt head">Reach us</h2>
+				<div class="icon-before one-rem-mb text-primary">
+					<i class="fa fa-map-marker" aria-hidden="true"></i>
+					503, Golden Icon,<br />
+					Nr. Someshwar Jain Temple Cross,<br />
+					132 Feet Ring Rd, Nr. Shyamal,<br />
+					Ahmedabad, Gujarat 380015
+				</div>
+				<div class="icon-before one-rem-mb text-primary">
+					<i class="fa fa-phone" aria-hidden="true"></i>
+					079 4019 3600, +91 90993 87037
+				</div>
+				<div class="icon-before text-primary">
+					<i class="fa fa-envelope" aria-hidden="true"></i>
+					swastispineandmindcare@gmail.com
+				</div>
+			</div>
 		</div>
-		<div class="col-12 col-lg-5 address-section">
-		<h2 class="f-title bold text-primary two-rem-mb one-rem-mt">Reach Us</h2>
-		<div class="icon-before one-rem-mb text-primary">
-			<i class="fa fa-map-marker" aria-hidden="true"></i>
-			503, Golden Icon,<br/>
-			Nr. Someshwar Jain Temple Cross,<br/>
-			132 Feet Ring Rd, Nr. Shyamal,<br/>
-			Ahmedabad, Gujarat 380015
-		</div>
-		<div class="icon-before one-rem-mb text-primary">
-			<i class="fa fa-phone" aria-hidden="true"></i>
-			079 4019 3600, +91 90993 87037
-		</div>
-		<div class="icon-before text-primary">
-			<i class="fa fa-envelope" aria-hidden="true"></i>
-			swastispineandmindcare@gmail.com
-		</div>
-</div>
 	</div>
 </div>
-</div>
 <script>
-      function initMap() {
-        const swasti = { lat: 23.0188926, lng: 72.5298122 };
-        const map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 19,
-          center: swasti,
-        });
-        const marker = new google.maps.Marker({
-          position: swasti,
-          map: map,
-        });
-      }
-    </script>
+	function initMap() {
+		const swasti = { lat: 23.0188926, lng: 72.5298122 };
+		const map = new google.maps.Map(document.getElementById("map"), {
+			zoom: 19,
+			center: swasti,
+		});
+		const marker = new google.maps.Marker({
+			position: swasti,
+			map: map,
+		});
+	}
+</script>

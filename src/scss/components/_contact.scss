@@ -1,9 +1,13 @@
 .contact {
   .form-control {
     border-color: $primary;
+    border-radius: 0;
   }
   label {
     color: $primary;
+    opacity: 0.4;
+    font-size: 18px;
+    line-height: 16px;
   }
   padding-top: 120px;
   .top-image {
@@ -23,7 +27,19 @@
   }
   .address-section {
     .icon-before {
-      font-size: 16px;
+      font-size: 20px;
+      line-height: 26px;
     }
+  }
+  .head {
+    font-size: 3rem;
+  }
+  .padding-side {
+    padding-right: 4rem !important;
+  }
+  .border-bottom-contact {
+    border-bottom: 1px solid $primary;
+    margin-bottom: 2rem;
+    opacity: 0.5;
   }
 }

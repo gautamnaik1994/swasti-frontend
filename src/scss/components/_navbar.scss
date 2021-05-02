@@ -1,12 +1,16 @@
 .navbar {
   a {
-    font-size: 18px;
+    font-size: 20px;
     text-transform: uppercase;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
   a.active {
     font-weight: bold;
   }
   background-color: white;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 .home,
 .about,
