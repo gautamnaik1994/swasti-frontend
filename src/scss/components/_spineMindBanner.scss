@@ -2,6 +2,11 @@
   .container {
     padding-top: 4rem;
   }
+  @media (min-width: 1400px) {
+    .container {
+      max-width: 1550px;
+    }
+  }
   .inner {
     padding-left: 4rem;
   }
@@ -20,7 +25,7 @@
   img {
     width: 100%;
     @include desktop {
-      width: 710px;
+      width: 810px;
       position: absolute;
       bottom: 0;
       right: 0;

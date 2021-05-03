@@ -7,12 +7,13 @@
     @include desktop {
       position: absolute;
       bottom: 4.3rem;
-      width: 700px;
+      width: 800px;
       right: 0;
     }
   }
   .form-control {
     border-color: $primary;
+    border-radius: 0;
   }
   label, span {
     color: $primary;

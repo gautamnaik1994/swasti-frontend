@@ -3,6 +3,12 @@
   .container-top {
     padding-top: 120px;
   }
+  
+  @media (min-width: 1400px) {
+    .container-top {
+      max-width: 1550px;
+    }
+  }
   .border-primary{
     border: 1px solid $primary;
   }

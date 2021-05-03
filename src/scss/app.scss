@@ -88,6 +88,14 @@ body {
   }
 }
 
+.big-text-pink {
+  opacity: 0.1;
+}
+
+.big-text-white {
+  opacity: 0.2;
+}
+
 .custom-file-input {
   display: flex;
   width: 100%;
@@ -139,5 +147,12 @@ body {
   }
   .fa-map-marker {
     font-size: 1.3rem;
+  }
+}
+
+.tab-side-content {
+  padding-left: 25px;
+  p, li {
+    font-size: 16px;
   }
 }
