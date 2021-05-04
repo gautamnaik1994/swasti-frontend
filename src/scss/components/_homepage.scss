@@ -5,13 +5,11 @@
       width: 100%;
     }
   }
-  .btn-hidden {
-    position: absolute;
-    height: 100px;
-    width: 30%;
-    top: 0;
+  .btn-top {
     cursor: pointer;
-    opacity: 0;
+    text-decoration-color: $primary;
+    font-size: 58px;
+    // opacity: 0;
   }
   .btn-hd-lt {
     left: 0;
@@ -19,5 +17,31 @@
   .btn-hd-rt {
     right: 0;
   }
-}
 
+  .text-middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:  0 3rem;
+    @include desktop {
+      padding: 6rem;
+    }
+  }
+  .logo-floating {
+    width: 150px !important;
+    @include desktop {
+      width: 100%
+    }
+  }
+
+  .banner-img {
+    padding-bottom: 10rem;
+    @include desktop {
+      padding-bottom: 22rem;
+    }
+    background: url(../../img/banner_ill.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+  }
+}
