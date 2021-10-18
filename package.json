@@ -19,7 +19,7 @@
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
-    "panini": "^1.7.1",
+    "panini": "1.7.2",
     "rimraf": "^3.0.2"
   },
   "dependencies": {
