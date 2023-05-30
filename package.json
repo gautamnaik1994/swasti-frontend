@@ -20,7 +20,7 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
     "panini": "^1.7.1",
-    "rimraf": "^3.0.2"
+    "rimraf": "^5.0.0"
   },
   "dependencies": {
     "bootstrap": "^5.0.0-beta3"
